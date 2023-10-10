@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(250, 250, 250);
+    font-family: 'Roboto', sans-serif;
+
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+.main video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.main h1 {
+    color: #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    font-size: 2.5vw;
+
+}
+
+
+.main .scroll {
+    position: absolute;
+    top: 85%;
+    left: 77%;
+    font-size: 4vw;
+    animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+    
+}
+
+.icon > img {
+    position: absolute;
+    top: 75%;
+    left:85%;
+    height: 180px;
+    animation-name: blink;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+
+@keyframes blink {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+
+
+
+
+.main  .but {
+    color: #ffffff;
+    position: absolute;
+    top: 20%;
+
+    font-size: 3vw;
+}
+.main  .but span {
+    color: rgb(85, 119, 252);
+    top: 15%;
+    font-size: 3vw;
+}
+
+
+
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 4vw;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: #000;
+    /* background-image: url('https://c4.wallpaperflare.com/wallpaper/708/846/337/anime-demon-slayer-kimetsu-no-yaiba-tanjirou-kamado-hd-wallpaper-preview.jpg'); */
+   
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 25vw;
+    height: 60vh;
+    perspective: 1000px;
+    border-radius: 2vw;
+    /* overflow: hidden; */
+}
+  
+img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 2vw;
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform ease 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 2vw;
+    
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 2vw;
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2vw;
+    
+}
+
+.flip-card-back{
+    padding: 2vw;
+    border-radius: 2vw;
+
+}
+  
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: rgb(248, 246, 246);
+    border-radius: 2vw;
+}
+  
+.flip-card-back {
+    background-color:#000;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 2vw;
+}
+
+
+
+
+/* <--------------back card------------> */
+
+.name {
+    font-size: 3vw;
+    text-align: center;
+    color:  rgb(85, 119, 252);
+}
+.team{
+    font-size: 2vw;
+    text-align: center;
+    margin: 1vw;
+    margin-top: 4vw;
+    
+}
+.about{
+    margin-top: 5vw;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+
+/* <--------------other pages ------------> */
+
+
+.card-1{
+    height: 100vh;
+    width: 100%;
+    background-color: bisque;
+}
+
+/* ---------page-------- */
+
+
+.page-2{
+    height: 100vh;
+    width: 100%;
+}

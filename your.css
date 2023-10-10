@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.yourname{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images7.alphacoders.com/737/thumb-1920-737400.jpg');
+    position: relative;
+}
+
+p{
+    position: absolute;
+    top:50%;
+    left: 40%;
+    color: white;
+    font-size: 2vw;
+    padding: 2vw;
+}
